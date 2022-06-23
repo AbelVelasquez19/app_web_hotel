@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Producto";
+}
+
+<div class="card" style="border-bottom:none !important">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <h3 class="card-title">
+                    <i class="ion ion-clipboard mr-1"></i>
+                    Listado producto
+                </h3>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <a class="btn btn-primary my-2 my-sm-0" type="button" data-toggle="modal" data-target="#modalProducto">Nuevo registro</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col-md-12 d-flex justify-content-end">
+                <fieldset style="border: 1px solid #dee2e6;">
+                    <legend>Buscar por categoria</legend>
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <select class="form-control" id="cboLLenarCategoria">
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-success" type="button">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </fieldset>
+
+                <fieldset style="border: 1px solid #dee2e6;">
+                    <legend>Buscar por marca</legend>
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <select class="form-control" id="cboLLenarMarca">
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-success" type="button">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </fieldset>
+
+                <fieldset style="border: 1px solid #dee2e6;">
+                    <legend>Buscar por nombre del producto</legend>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="text" id="txtnombreproducto" placeholder="Buscar pro nombre" aria-label="Buscar" onkeyup="Buscar();">
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+        <div id="divTabla">
+
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/generic.js"></script>
+<script src="~/Scripts/producto.js"></script>
+
